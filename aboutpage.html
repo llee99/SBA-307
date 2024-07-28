@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for specific page styles */
+        .highlight {
+            background-color: #f0f8ff;
+            padding: 10px;
+            margin: auto;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        </style></head>
+<body>
+    <header>
+        <img src="sba_bw_pic.jpeg" alt="Black and White beach landscape" class="header-image">
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="aboutpage.html">About</a></li>
+                <li><a href="servicepage.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>About Us</h1>
+        <p>We aspire to collect riveting black and white pictures to display</p>
+        <label for="section">Explore:</label>
+        <select id="section" name="section">
+            <option value="team">Our Team</option>
+            <option value="mission">Our Mission</option>
+            <option value="history">Our History</option>
+        </select>
+        <section id="contact">
+            <img src="sba_bw.gif" alt="black and white landscape gif">
+            <h2>Contact Us</h2>
+            <form action="/contact" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Luke Lee | SBA 307 | Per Scholas RT33</p>
+    </footer>
+</body>
+</html>
